@@ -1,0 +1,26 @@
+{
+  "canisters": {
+    "Fairflow_backend": {
+      "main": "src/Fairflow_backend/main.mo",
+      "type": "motoko"
+    },
+    "Fairflow_frontend": {
+      "dependencies": [
+        "Fairflow_backend"
+      ],
+      "source": [
+        "src/Fairflow_frontend/dist"
+      ],
+      "type": "assets",
+      "workspace": "Fairflow_frontend"
+    }
+  },
+  "defaults": {
+    "build": {
+      "args": "",
+      "packtool": ""
+    }
+  },
+  "output_env_file": ".env",
+  "version": 1
+}
